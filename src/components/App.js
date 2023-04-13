@@ -1,10 +1,20 @@
 import React from "react";
 import "./App.css";
 
-export default function App() {
+class productList extends React.Component{
+  render(){
+    return(
+      <h1>Produc List</h1>
+    );
+  }
+}
+
+function App() {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
+      <productList />
     </div>
   );
 }
+
+export default App;
