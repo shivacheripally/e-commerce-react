@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
 
-class productList extends React.Component{
+class ProductList extends React.Component{
   render(){
     return(
-      <h1>Produc List</h1>
+      <h1>Product List</h1>
     );
   }
 }
@@ -12,7 +12,7 @@ class productList extends React.Component{
 function App() {
   return (
     <div>
-      <productList />
+      <ProductList />
     </div>
   );
 }

@@ -1,0 +1,21 @@
+.item{
+  display: flex;
+}
+
+.image img{
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  box-shadow: 0px 0px 10px white;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.content img{
+  height: 50px;
+  width: 50px;
+}
