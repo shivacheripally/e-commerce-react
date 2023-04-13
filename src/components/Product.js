@@ -1,18 +1,20 @@
 import React from 'react';
+import './Product.css';
 
-function Product() {
+function Product(props) {
+  console.log(props.title);
   return (
     <div className="item">
       <div className="image">
         <img src="" alt="" />
       </div>
       <div className="content">
-        <h3>Title: </h3>
-        <p>Description: </p>
-        <h5>
-          Submitted By:
+        <span>Title: </span>
+        <span>Description: </span>
+        <span className='auth-img'>
+          <p>Submitted By:</p>
           <img src="" alt="" />
-        </h5>
+        </span>
       </div>
     </div>
   );
