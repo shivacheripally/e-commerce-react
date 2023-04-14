@@ -6,12 +6,12 @@ import './App.css';
 class ProductList extends React.Component {
   render() {
 
-    items = items.sort((a,b) => {
-      b.votes - a.votes;
+    const products = items.sort((a,b) => {
+      return b.votes - a.votes;
     });
     
-    const productComponents = items.map((item) => (
-      <Product {...item}/>
+    const productComponents = products.map((product,index) => (
+      <Product key={`product-${index}`} {...product}/>
     ));
 
     return <div>{productComponents}</div>

@@ -11,8 +11,9 @@ function Product(props) {
         <span>Title: {props.title}</span>
         <span>Description: {props.description}</span>
         <span className='auth-img'>
-          <p>Submitted By: </p>
+          <span>Submitted By: </span>
           <img src={props.submitterAvatarUrl} alt="avthar" />
+          <span>Votes:{props.votes}</span>
         </span>
       </div>
     </div>
